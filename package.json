@@ -1,0 +1,19 @@
+{
+  "name": "catexams",
+  "version": "1.0.0",
+  "description": "Official website for catexams.lk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madushan-sooriyarathne/cat-exams.git"
+  },
+  "author": "Madushan Sooriyarathne <hello@madushan.dev>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madushan-sooriyarathne/cat-exams/issues"
+  },
+  "homepage": "https://github.com/madushan-sooriyarathne/cat-exams#readme"
+}
