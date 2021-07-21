@@ -12,7 +12,9 @@ const App: React.FC<AppProps> = ({
   return (
     <>
       <Head>
-        <title> Next Boilerplate with Framer motion & styled component</title>
+        <title>
+          CATEXAMS.LK | Common Admission Test Preparation Guides & Classes
+        </title>
       </Head>
       {/* View port meta tags here */}
       <ThemeProvider theme={theme}>

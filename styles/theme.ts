@@ -20,8 +20,13 @@ declare module "styled-components" {
     fonts: {
       primary: string;
       secondary: string;
+      sinhala: string;
     };
-    gradients: {};
+    gradients: {
+      background: string;
+      primary: string;
+      secondary: string;
+    };
     shadows: {
       close: string;
       spread: string;
@@ -46,10 +51,15 @@ const theme: DefaultTheme = {
     // success: string,
   },
   fonts: {
-    primary: "Arial, Helvetica, sans-serif",
-    secondary: "'Times New Roman', Times, serif",
+    primary: "'Source Sans Pro', Arial, Helvetica, sans-serif",
+    secondary: "'Playfair Display', 'Times New Roman', Times, serif",
+    sinhala: " 'Abhaya Libre', serif",
   },
-  gradients: {},
+  gradients: {
+    background: " linear-gradient(135deg, #fdfcfb 10%, #e2d1c3 100%)",
+    primary: "linear-gradient(135deg, #3b2667 10%, #bc78ec 100%)",
+    secondary: "linear-gradient(135deg, #536976 10%, #292E49 100%);",
+  },
   shadows: {
     close: "0 0 5px 0 rgba(0, 0, 0, 0.25)",
     spread: " 0 0 20px 0 rgba(0, 0, 0, 0.15)",
