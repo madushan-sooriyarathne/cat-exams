@@ -8,7 +8,7 @@ interface HeadingProps {
 const Heading = styled.div<HeadingProps>`
   font-family: ${(props) =>
     props.sinhala ? props.theme.fonts.sinhala : props.theme.fonts.secondary};
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: 600;
   letter-spacing: 1px;
   text-align: ${(props) => props.alignment};

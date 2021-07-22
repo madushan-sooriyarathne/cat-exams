@@ -8,12 +8,22 @@ const Canvas = styled.div`
 
   display: grid;
   grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  grid-template-areas: "te im";
   background-image: ${(props) => props.theme.gradients.background};
   align-items: end;
   justify-items: center;
+
+  ${(props) => props.theme.responsive.next} {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, min-content);
+    grid-template-areas:
+      "te"
+      "im";
+  }
 `;
 
 const TextGroup = styled.div`
+  grid-area: te;
   align-self: center;
 
   width: 100%;
@@ -37,15 +47,16 @@ const ContactGroup = styled.div`
 
 const SinhalaText = styled.p`
   font-family: ${(props) => props.theme.fonts.sinhala};
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   font-weight: 400;
   letter-spacing: 0;
   text-align: center;
 `;
 
-const Image = styled.div`
+const ImageWrapper = styled.div`
   width: 100%;
-  height: 70%;
+  height: 100%;
+  grid-area: im;
 `;
 
-export { Canvas, TextGroup, Image, ContactGroup, SinhalaText };
+export { Canvas, TextGroup, ContactGroup, SinhalaText, ImageWrapper };

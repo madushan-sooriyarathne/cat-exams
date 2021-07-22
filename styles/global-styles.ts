@@ -12,7 +12,7 @@ const GlobalStyles: GlobalStyleComponent<{}, DefaultTheme> = createGlobalStyle`
     }
 
     html {
-        font-size: 62.5%large;
+        font-size: 62.5%;
         font-family: ${(props) => props.theme.fonts.primary};
         font-weight: 400;
         letter-spacing: 0.5px;
@@ -25,6 +25,10 @@ const GlobalStyles: GlobalStyleComponent<{}, DefaultTheme> = createGlobalStyle`
         text-rendering: optimizeLegibility;
         font-smooth: always;
         -webkit-font-smoothing: antialiased;
+
+        ${(props) => props.theme.responsive.large} {
+            font-size: 50%;
+        }
 
     }
 

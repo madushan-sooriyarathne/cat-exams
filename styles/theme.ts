@@ -31,7 +31,10 @@ declare module "styled-components" {
       close: string;
       spread: string;
     };
-    responsive: {};
+    responsive: {
+      large: string;
+      next: string;
+    };
   }
 }
 
@@ -64,7 +67,10 @@ const theme: DefaultTheme = {
     close: "0 0 5px 0 rgba(0, 0, 0, 0.25)",
     spread: " 0 0 20px 0 rgba(0, 0, 0, 0.15)",
   },
-  responsive: {},
+  responsive: {
+    large: "@media only screen and (max-width: 100em)",
+    next: "@media only screen and (max-width: 84.375em)",
+  },
 };
 
 export default theme;
