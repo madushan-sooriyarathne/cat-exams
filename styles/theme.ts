@@ -20,7 +20,8 @@ declare module "styled-components" {
     fonts: {
       primary: string;
       secondary: string;
-      sinhala: string;
+      sinhalaPrimary: string;
+      sinhalaSecondary: string;
     };
     gradients: {
       background: string;
@@ -56,7 +57,8 @@ const theme: DefaultTheme = {
   fonts: {
     primary: "'Source Sans Pro', Arial, Helvetica, sans-serif",
     secondary: "'Playfair Display', 'Times New Roman', Times, serif",
-    sinhala: " 'Abhaya Libre', serif",
+    sinhalaPrimary: "'Malithi', serif",
+    sinhalaSecondary: "'Yaldevi', serif",
   },
   gradients: {
     background: " linear-gradient(135deg, #fdfcfb 10%, #e2d1c3 100%)",
