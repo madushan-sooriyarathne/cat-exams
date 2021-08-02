@@ -62,8 +62,8 @@ const theme: DefaultTheme = {
   },
   gradients: {
     background: " linear-gradient(135deg, #fdfcfb 10%, #e2d1c3 100%)",
-    primary: "linear-gradient(135deg, #3b2667 10%, #bc78ec 100%)",
-    secondary: "linear-gradient(135deg, #536976 10%, #292E49 100%);",
+    primary: "linear-gradient(135deg, #FF9D6C 10%, #BB4E75 100%)",
+    secondary: "linear-gradient(135deg, #09203F 10%, #537895 100%);",
   },
   shadows: {
     close: "0 0 5px 0 rgba(0, 0, 0, 0.25)",
