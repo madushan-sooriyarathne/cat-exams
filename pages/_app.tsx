@@ -5,6 +5,8 @@ import { ThemeProvider } from "styled-components";
 import GlobalStyles from "@styles/global-styles";
 import theme from "@styles/theme";
 
+import "../styles/fonts.css";
+
 const App: React.FC<AppProps> = ({
   Component,
   pageProps,
