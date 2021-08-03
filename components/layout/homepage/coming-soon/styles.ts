@@ -97,6 +97,10 @@ const CanvasFG = styled.div`
   ${(props) => props.theme.responsive.extraSmall} {
     padding: 5rem;
   }
+
+  ${(props) => props.theme.responsive.tiny} {
+    padding: 2rem;
+  }
 `;
 
 const Logo = styled.img`
@@ -119,20 +123,21 @@ const TextGroup = styled.div`
   row-gap: 2rem;
 `;
 
-const ContactGroup = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 0;
+const ContactText = styled.h4`
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-family: ${(props) => props.theme.colors.primary};
+  color: ${(props) => props.theme.colors.secondary};
 `;
 
 const SinhalaText = styled.p`
   font-family: ${(props) => props.theme.fonts.sinhalaPrimary};
-  font-size: 2.4rem;
+  font-size: 1.5em;
   font-weight: 400;
   letter-spacing: 0;
-  text-align: center;
+  text-align: left;
+  margin-top: -2rem;
 `;
 
 const ImageWrapper = styled.div`
@@ -215,8 +220,8 @@ export {
   CanvasFG,
   Logo,
   TextGroup,
-  ContactGroup,
   SinhalaText,
+  ContactText,
   ImageWrapper,
   CTABox,
   CTAItem,

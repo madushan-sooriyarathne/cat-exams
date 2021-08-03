@@ -5,8 +5,6 @@ import ImageComponent from "@components/imageComponent";
 import {
   Canvas,
   TextGroup,
-  ContactGroup,
-  SinhalaText,
   ImageWrapper,
   CanvasBG,
   BlobOne,
@@ -18,6 +16,8 @@ import {
   CTABox,
   CTAItem,
   CTAIcon,
+  SinhalaText,
+  ContactText,
 } from "./styles";
 
 const ComingSoon: React.FC = (): JSX.Element => {
@@ -45,6 +45,10 @@ const ComingSoon: React.FC = (): JSX.Element => {
           <SecondaryHeading sinhala alignment="left">
             ඕෂධ අල්විස්
           </SecondaryHeading>
+          <SinhalaText>
+            රජයේ උසස් තරඟ විභාගයක් සමත්ව උපකාරක පන්ති මෙහෙයවන එකම දේශක
+          </SinhalaText>
+          <ContactText>071 672 0720</ContactText>
         </TextGroup>
         <ImageWrapper>
           <ImageComponent

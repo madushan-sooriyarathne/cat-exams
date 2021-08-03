@@ -19,6 +19,10 @@ const Heading = styled.div<HeadingProps>`
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  ${(props) => props.theme.responsive.extraSmall} {
+    font-size: 4rem;
+  }
 `;
 
 export { Heading };
