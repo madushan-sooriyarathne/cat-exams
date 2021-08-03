@@ -48,7 +48,7 @@ const theme: DefaultTheme = {
     primary: "#d8684e",
     // primaryMedium: string,
     // primaryLight: string,
-    secondary: "yellow",
+    secondary: "#f69000",
     // secondaryMedium: string,
     // secondaryLight: string,
     white: "white",
