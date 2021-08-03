@@ -7,7 +7,9 @@ interface HeadingProps {
 
 const Heading = styled.div<HeadingProps>`
   font-family: ${(props) =>
-    props.sinhala ? props.theme.fonts.sinhala : props.theme.fonts.secondary};
+    props.sinhala
+      ? props.theme.fonts.sinhalaSecondary
+      : props.theme.fonts.primary};
   font-size: 4rem;
   font-weight: 600;
   letter-spacing: 1px;
@@ -17,6 +19,10 @@ const Heading = styled.div<HeadingProps>`
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  ${(props) => props.theme.responsive.medium} {
+    font-size: 3rem;
+  }
 `;
 
 export { Heading };
