@@ -35,13 +35,17 @@ declare module "styled-components" {
     responsive: {
       large: string;
       next: string;
+      medium: string;
+      small: string;
+      extraSmall: string;
+      tiny: string;
     };
   }
 }
 
 const theme: DefaultTheme = {
   colors: {
-    primary: "red",
+    primary: "#d8684e",
     // primaryMedium: string,
     // primaryLight: string,
     secondary: "yellow",
@@ -55,7 +59,7 @@ const theme: DefaultTheme = {
     // success: string,
   },
   fonts: {
-    primary: "'Source Sans Pro', Arial, Helvetica, sans-serif",
+    primary: "'Inter', Arial, Helvetica, sans-serif",
     secondary: "'Playfair Display', 'Times New Roman', Times, serif",
     sinhalaPrimary: "'Malithi', serif",
     sinhalaSecondary: "'Yaldevi', serif",
@@ -72,6 +76,10 @@ const theme: DefaultTheme = {
   responsive: {
     large: "@media only screen and (max-width: 100em)",
     next: "@media only screen and (max-width: 84.375em)",
+    medium: "@media only screen and (max-width: 87.5em)", // 1400px
+    small: "@media only screen and (max-width: 68.75em)",
+    extraSmall: "@media only screen and (max-width: 50em)", // 80px
+    tiny: "@media only screen and (max-width: 31.25em)", //500px
   },
 };
 
