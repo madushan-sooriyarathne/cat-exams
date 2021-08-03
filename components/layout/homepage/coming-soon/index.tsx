@@ -40,7 +40,7 @@ const ComingSoon: React.FC = (): JSX.Element => {
         <TextGroup>
           <PrimaryHeading sinhala alignment="left">
             පොදු ප්‍රවේශ විභාගය ඇතුළු රජයේ සියලුම තරග විභාග සදහා නිවැරිදිම සහ
-            විශ්වාසනීයම මඟ පෙන්වීම.
+            විශ්වාසනීයම මඟ පෙන්වීම
           </PrimaryHeading>
           <SecondaryHeading sinhala alignment="left">
             ඕෂධ අල්විස්
